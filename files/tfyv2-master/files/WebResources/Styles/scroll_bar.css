@@ -1,0 +1,111 @@
+/* Tiny Scrollbar */
+#scrollbar2 { width: 170px;}
+#scrollbar2 .viewport { width: 160px; height: 260px; overflow: hidden; position: relative;top:0px; }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0;width:100% }
+#scrollbar2 .scrollbar{ position: relative; background-position: 0 0; float: right; width: 8px;z-index:10;right:8px; }
+#scrollbar2 .track { background: transparent; height: 100%; width:6px; position: relative;/* padding: 0 1px;*/}
+#scrollbar2 .thumb { background: #696969; height: 20px; width: 5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 3px; border-radius:5px; }
+#scrollbar2 .thumb .end { background: #696969; overflow: hidden; height: 5px; width: 5px; border-radius:5px;}
+#scrollbar2 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+.header .left {
+    float: left;
+    padding: 2px 5px 0 1px;
+    width: 48%;
+}
+.header span.prev_left{
+    min-height: 55px;
+    width: 85px;
+	float:left;
+}
+.header span{margin-left: 5px;}
+.header .headtop{
+	width: 100%;
+	height: auto;
+	margin:0px;
+}
+.header img, .header h2, .header h3 { /*  height: auto;   width: 100%;*/}
+.header h2, .header h3 {
+	clear:both;
+    border-top: 1px solid #000000;
+    padding-bottom: 2px;
+    padding-top: 2px;
+	font-size: 8px;
+	margin: 0px;
+	line-height: 12px;
+}
+.menu {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    width: 100%;
+	 min-height: 132px;
+	/*min-height: 85px;*/
+}
+.menu ul li a img {
+	height: auto;
+    padding: 0;
+    width: 40px;
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none outside none;
+   margin: 0 2px 5px 7px;
+    width: 40px;
+	line-height: 10px;
+	float:left;
+}
+.menu ul li a{font-size:10px;}
+.footer a img{width: 40px;height: auto;}
+.header .headtop img{
+	text-align: center; 
+	margin: 0 0 0 11px;
+	width:40px;
+}
+
+/*
+.metal .left,.metal .right,.metal .midbg,.rubber .left,.rubber .right,.rubber .midbg{
+	height: 36px;	
+	font-size: 14px;
+	font-family: 'Helvetica-CondensedBoldRg';
+	margin-top: 5px;
+}
+.metal .left{background: url(../Images/common/small_plastic_leftc.png) no-repeat left top;}
+.metal .right{background: url(../Images/common/small_plastic_rightc.png) no-repeat right top;}
+.metal .midbg{width: 100%;background: url(../Images/common/small_plastic_bg.png) repeat-x;}
+
+.rubber .left{background: url(../Images/common/small_rubber_leftc.png) no-repeat left top;}
+.rubber .right{background: url(../Images/common/small_rubber_rightc.png) no-repeat right top;}
+.rubber .midbg{width: 100%;background: url(../Images/common/small_rubber_bg.png) repeat-x;}
+.metal .right img,.rubber .right img{
+	width: 20px;
+	float: left;
+	margin-left:20px;		
+}
+.metal .right a,.rubber .right a{
+	font-size: 14px;
+	font-family: 'Helvetica-CondensedBoldRg';
+	color: #6b6a6a;
+	text-decoration: none;
+	display: block;
+}*/
+
+.rubber .left,.rubber .right,
+.metal .left,.metal .right,
+.rubber a,.metal a{
+	background-image: url(../Images/common/smallcard_button.png);
+	height: 36px;
+}
+.rubber .left{background-position:  0 0;}
+.rubber .right{background-position:  right -42px;}
+.metal .left{background-position:  0 -129px;}
+.metal .right{background-position:  right -176px;}
+
+.metal .right a, .rubber .right a{font-size: 14px;margin: 0 16px;height: 26px}
+.metal .right img,.rubber .right img{
+	width: 20px;
+	float: left;
+	margin-left: 5px;	
+		
+}
+.rubber a{background-position:  right -85px;}
+.metal a{background-position:  right -222px;}

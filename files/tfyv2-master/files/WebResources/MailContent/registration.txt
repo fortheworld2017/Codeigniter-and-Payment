@@ -1,0 +1,9 @@
+
+Hi {USER_NAME},<br><br>
+Thanks for signing up to Tactify!  <br>
+Please click {LINK} to login our site.<br>
+<br>
+Cheers,
+<br>
+{REGARDS_NAME}<br><br>
+

@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Strips www from app.tactify.com
+# RewriteCond %{HTTP_HOST} ^www.app.tactify.com$
+# RewriteRule ^(.*)$ https://app.tactify.com/$1 [R,L]
+
+# If domain != app.tactify.com, redirects to app.tactify.com
+# RewriteCond %{HTTP_HOST} !^app.tactify.com$ [NC]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+#RewriteRule ^(.*)$ https://app.tactify.com/? [R,L]
+
+# Permits codeigniter urls without index.php
+#RewriteCond $1 !^(index\.php|img|robots\.txt)
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+# This checks to make sure the connection is not already HTTPS
+
+#RewriteCond %{REQUEST_URI} ! /registertoday
+#RewriteCond %{HTTPS} !=on
+#RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]

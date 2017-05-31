@@ -1,0 +1,14 @@
+@media only screen and (min-width: 500px) {
+.lander .button-grid .button-holder { width:120px; }
+}
+
+@media only screen and (min-width: 769px) {
+.lander .hero-container { width:50%; }
+.lander .offers-container { width:50%; }
+.lander .event-info { width:50%; }
+.lander .actions { width:50%; }
+.lander .event-actions { width:50%; }
+}
+@media only screen and (min-width: 1025px) {
+body.lander { padding:5% 0 ; }
+}

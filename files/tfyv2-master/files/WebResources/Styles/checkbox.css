@@ -1,0 +1,64 @@
+/*********  Checkbox and radio button using images : Start *********/
+input[type="radio"],input[type="checkbox"],.card_details input[type="checkbox"],.card_details .cardname input[type="checkbox"]{
+    vertical-align: middle;
+}
+/* hide the checkboxes and radios */
+input[type="radio"],input[type="checkbox"],.card_details input[type="checkbox"],.card_details .cardname input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+	filter: alpha(opacity=0);
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+}
+.card_details .cardname input[type="checkbox"]{
+	width: 24px;
+	height: 24px;
+}
+/* we use generated content to create a placeholder for the checkbox and the radio */
+input[type="radio"] + label::before,input[type="checkbox"] + label::before,.card_details input[type="checkbox"] + label::before,
+.card_details .cardname input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    margin: 0 0px 0 5px;
+    background: url(../Images/common/checkbox.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+.card_details .cardname input[type="checkbox"] + label::before{
+	background: url(../Images/common/big_checkbox.png) no-repeat 0 0;
+	width: 24px;
+    height: 24px;
+    line-height: 24px;
+	margin:0px;
+}
+ /* disabled checkbox or radio */
+input[type="radio"]:disabled + label,input[type="checkbox"]:disabled + label,.card_details input[type="checkbox"]:disabled + label,
+.card_details .cardname input[type="checkbox"]:disabled + label{
+    opacity: .5;
+	filter: alpha(opacity=50);
+    cursor: default; /* or cursor: no-drop */
+}
+/* normal state radio */
+input[type="radio"] + label::before{
+    background-position: 0 0;
+}
+/* selected radio */
+input[type="radio"]:checked + label::before {
+    background-position: 0px -17px;
+}
+/* selected checkbox */
+input[type="checkbox"]:checked + label::before,.card_details input[type="checkbox"]:checked + label::before{
+    background-position: 0 -17px;
+}	
+.card_details .cardname input[type="checkbox"]:checked + label::before{  background-position: 0 -24px;}
+/* older versions of internet explorer do not support either generated content, so we display the system checkboxes and radio buttons */
+@media \0screen {
+    .slide2_right input[type="checkbox"],
+    .slide2_left input[type="radio"],.slide2_right input[type="radio"] {
+        position: static;
+    }
+}
+/*********  Checkbox and radio button using images : End *********/

@@ -1,0 +1,16 @@
+
+body{ background: url(../Images/buttons/bg.png) repeat left top }
+.header,.container{ float: none; clear: both; }
+.footer{ margin-top: 20px }
+.menu ul li{ float: left; }
+#tileicon,.tileicon{ margin: 0 120px }
+.outer_box{
+	background: #fff;
+	border: 2px solid #fff;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px rgba(0,0,0,0.5);
+	width: 800px;
+	margin: 5.5% auto;
+	/*border-bottom: 0px solid #fff*/
+}

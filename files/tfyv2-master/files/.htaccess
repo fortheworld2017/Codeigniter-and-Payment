@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Adds www do tactify.com
+RewriteCond %{HTTP_HOST} ^tactify.com$
+RewriteRule ^(.*)$ http://www.tactify.com/? [R,L]
+
+# If its a card
+RewriteCond %{HTTP_HOST} !^test-tactify.elasticbeanstalk.com$
+RewriteRule ^([0-9a-zA-z]{8})$ index.php?page=card&shorturl=$1&da=1&%{QUERY_STRING} [NC,L]
+
+# If its not a card
+RewriteCond %{HTTP_HOST} ^test-tactify.elasticbeanstalk.com$
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteRule ^(.*)$ index.php?page=$1&%{QUERY_STRING}&param=%{REQUEST_URI}
+
+# If domain != tactify.com, redirects to tactify.com
+RewriteCond %{HTTP_HOST} !^test-tactify.elasticbeanstalk.com$ [NC]
+RewriteCond %{REQUEST_URI} !^index.php\?page\=card(.*)$
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteRule ^(.*)$ http://test-tactify.elasticbeanstalk.com/? [R,L]

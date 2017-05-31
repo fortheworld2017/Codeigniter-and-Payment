@@ -1,0 +1,113 @@
+/* TACTIFY THEME */
+
+/* GENERAL
+-------------------------------------------------- */
+.lander h4, .lander p, .lander span, .lander a, .lander div { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+body.lander { background:#333; padding:0; margin:0; /*padding-bottom:40px;*/ }
+.lander h1, .lander h2, .lander h3 { font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; margin:0; }
+.lander h1 { font-size:20px; margin:0; }
+.lander h2 { margin-top:0; font-size:24px; line-height: 24px; }
+.lander h4 { font-size:16px; line-height: 18px; font-weight: bold; margin:0; }
+.lander p { font-size:14px; line-height: 16px; margin:20px 0;}
+.lander .light { font-weight:200; }
+.lander .regular { font-weight:400; }
+.lander .semi-bold { font-weight:500; }
+.lander .bold { font-weight:600; }
+.lander .clearfix { clear:both; }
+.lander table { border-collapse: collapse; border-spacing: 0; width:100%; }
+.lander table td { padding:0; }
+.lander .lander-wrapper { width:100%; max-width:1024px; margin:0 auto; background:#fff; position:relative; box-shadow:0 2px 10px rgba(0,0,0,0.5); }
+.lander .padding-md { padding:5%; }
+.lander .padding-lg { padding:10%; }
+
+/* BUTTONS
+-------------------------------------------------- */
+.lander .btn { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display:block; width:100%; border:#ccc solid 1px; border-bottom:#bbb solid 1px; padding:10px; text-align: center; font-size: 14px; text-transform: uppercase; border-radius:4px; margin-bottom:10px;
+	/* fallback */
+	background-color: #f5f5f5;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e8e8e8), to(#f9f9f9));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f9f9f9, #e8e8e8); }
+.lander .btn:hover { background:#fff; cursor: pointer; color:#555; }
+
+/* HEADER
+-------------------------------------------------- */
+.lander .header { width:100%; padding-bottom: 0; position:relative; }
+.lander .logo { height:75px; width:160px; float:left; text-align: center; }
+.lander td.logo { float:none; width:100px; vertical-align: middle }
+.lander .logo img { max-height:75px; max-width:120px; height:auto; }
+.lander td.logo img { max-height:70px; max-width:90px; }
+.lander .profile-image { width:125px; height:125px; padding:5px; background:#fff; position:absolute; right:0; }
+.lander .profile-image img { width:100%; height:auto; }
+.lander .name-holder { float:left; clear:left; width:100%; height:59px; border-top:#000 solid 1px; }
+.lander .card .name-holder span { font-size:14px; line-height: 14px; display: block; margin-bottom:5px; }
+.lander .name-holder .padding { padding:12px 0 0 12px; }
+.lander .page-title { text-align: center; }
+
+/* CONTENT
+-------------------------------------------------- */
+.lander .content.event { background:#292929; }
+
+/* BUTTON GRID
+-------------------------------------------------- */
+.lander .button-grid { width:auto; padding:20px; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center; }
+.lander .button-grid .button-holder { width:70px; margin:10px; display: inline-block; }
+.lander .button-grid .button-holder a { font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; color:#ccc; font-size:14px; line-height:14px; text-decoration: none; }
+.lander .button-grid .button-holder a.text i { display: none; }
+.lander .button-grid .button-holder .button { display:block; float:left;  margin-bottom:5px; }
+.lander .button-grid .button-holder .button img { width:100%; height:auto; margin:0; float:left; }
+.lander .button-grid .button-holder .button.default { background:url(../img/phone/button-bg.png) center center no-repeat scroll; background-size: cover; }
+.lander .button-grid .button-holder .button.rubber { background:url(../img/phone/button-bg-rubber.png) center center no-repeat scroll; background-size: cover; }
+
+/* BUTTON LIST
+-------------------------------------------------- */
+.lander .button-list { padding:0; background-image:none; text-align: left; }
+.lander .button-list .button-holder { width:100%; margin:0; display: block; }
+.lander .button-list .button-holder a.button { display:none; }
+.lander .button-list .button-holder a.text { text-transform: uppercase; color:#ccc; font-size:14px; line-height:14px; text-decoration: none; padding:14px; display: block; }
+.lander .button-list .button-holder a.text.default { background-color:#292929; border-top:#333 solid 1px; }
+.lander .button-list .button-holder a.text.rubber { border-top:#ccc solid 1px; color:#555; }
+.lander .button-list .button-holder:first-child a.text { border:none; }
+.lander .button-list .button-holder a.text i { display: inline-block; width:20px; }
+
+/* HERO IMAGE
+-------------------------------------------------- */
+.lander .hero-container { float:left; width:100%; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.lander .hero-container img { width:100%; float:left; }
+
+/* OFFERS
+-------------------------------------------------- */
+.lander .offers-container { float:right; width:100%; }
+.lander .offer { background:#ddd; padding:20px; margin-bottom:2px; }
+.lander .offer p { margin:5px 0; }
+.lander .offer .price { float:right; padding:0 0 10px 10px; color:#e33333; font-weight: bold; font-size:18px; }
+
+/* EVENTS
+-------------------------------------------------- */
+.lander .event-info { float:left; width:100%; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.lander .event-info p, .event-info h2 { color:#bbb; }
+.lander .event-info p { line-height: 28px; }
+.lander .event-info p:last-child { margin-bottom:0; }
+
+/* ACTIONS
+-------------------------------------------------- */
+.lander .actions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float:right; width:100%; padding:10px 10px 0 10px; }
+.lander .event-actions { float:right; background:#292929; width:100%; }
+.lander .event-actions .btn { border-radius:0; background:none; border:none; border-bottom:#333 solid 1px; margin:0; padding:15px; color:#ccc; text-align: left; }
+.lander .event-actions .btn:active, .event-actions .btn:hover { background:#444; color:#fff; }
+.lander .event-actions .btn span { width:30px; display: inline-block; }
+
+/* FOOTER
+-------------------------------------------------- */
+.lander .footer { width:100%; background:#fff; position:relative; bottom:0; left:0; }
+.lander .footer-logo { height:24px; overflow: hidden; background:#fff; padding:10px 10px 6px 10px; float:right; box-sizing: content-box !important;}
+.lander .footer img { height:100%; width:auto; }
+
+

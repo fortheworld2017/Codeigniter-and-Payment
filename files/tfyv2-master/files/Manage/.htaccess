@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Adds www do tactify.com
+RewriteCond %{HTTP_HOST} ^tactify.com$
+RewriteRule ^(.*)$ http://www.tactify.com/Manage/ [R,L]
+
+# If domain != tactify.com, redirects to tactify.com
+#RewriteCond %{HTTP_HOST} !^(www\.)?tactify.com$ [NC]
+#RewriteRule ^(.*)$ http://tactify.com/? [R,L]

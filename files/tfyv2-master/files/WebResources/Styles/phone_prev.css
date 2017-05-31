@@ -1,0 +1,151 @@
+html,body,ul,h2,h3,img{padding:0;margin:0}
+body {
+	/*background: #cbcbcb;*/
+	margin:0px auto;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+img,a{
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);	
+	-webkit-focus-ring-color:  rgba(255, 255, 255, 0);
+}
+body.bgcolor{background:#42e4e6;}
+@font-face {
+    font-family: 'Helvetica-CondensedBoldRg';
+    src: url('fonts/helvetica_condensedbold-webfont.eot');
+    src: url('fonts/helvetica_condensedbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helvetica_condensedbold-webfont.woff') format('woff'),
+         url('fonts/helvetica_condensedbold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.clearh{clear:both;height:0px;}
+.header{
+	/*float: left;*/
+	width: 100%;
+	padding: 0px 0;
+	/*background: #fff;*/	
+}
+/*.header .header_top{min-height: 150px;}*/
+.header .left{	width: 47%;float:left;/*padding:10px 5px 0 10px;*/}
+.header .right{	width: 48%;float:right;	}
+.header .right img{width: 100%;height:auto}
+.header h2{margin-top:5px}
+.header .headtop{float:left;margin: 10% 15% 10% 25%}
+.header .headbot{padding:10px 5px 0 10px;clear:both;width: 50%}
+.header .headtop img{text-align: center;}
+.header h2,.header h3{
+	/*border-top: 1px solid #000;	*/
+	padding-top:10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+}
+.header h2{padding-top:20px}
+.header h3{
+	border-top: 1px solid #000;	
+	padding-bottom:20px;	
+}
+.header h3 {font-size: 20px;}
+.header img,.header h2,.header h3{/*width:100%;*/height:auto; clear:both;}
+.header .right p{font-size:100%;font-weight:100}
+.shade{
+	background: transparent url(../Images/buttons/shade.png) repeat-x left top;
+	width: 100%;
+	height: 16px;
+	float:left;
+}
+.container{
+	/*background: #000 url(../Images/buttons/shade.png) repeat-x left top;*/
+	float:left;
+	width:100%;
+}		
+.bg{
+	/*background: url(../Images/buttons/blackbg.jpg) repeat-x center 5px;*/
+	width: 100%;
+}
+.footer{
+	position: relative;
+	z-index:9;
+	/*background: url(../Images/buttons/shade.png) repeat-x left -2px;*/
+	float: left;
+	width: 100%
+}
+.footer a{
+	float: right;
+	padding: 6px 20px 0 0;
+}
+.menu{width:100%;padding:5px 0px 0px 0;text-align:center;padding-top:60px;padding-bottom:40px;/*min-height:200px*/}
+.menu ul{list-style:none;padding:0px;display:inline;line-height:25px;}
+.menu ul li{list-style:none;display:inline-block;width:85px; margin:0px 10px 2px 10px; float:left;}
+.menu ul li a{ font-size:14px; font-weight:bold; color:#eee; text-decoration:none; text-shadow:1px 1px #000;}
+.menu ul li a img{padding:0px; width:85px; height:85px;}
+.header span.prev_left{
+    min-height: 255px;
+    width: 350px;
+	float:left;	
+}
+/*
+.metal .left,.metal .right,.rubber .left,.rubber .right{
+	background: url(../Images/common/plastic_leftc.png) no-repeat left top;
+	height: 72px;
+}
+.metal .right,.rubber .right{
+	background: url(../Images/common/plastic_rightc.png) no-repeat right top;
+	text-align: center;
+	font-size: 42px;
+	font-family: 'Helvetica-CondensedBoldRg';
+	color: #6b6a6a;
+	padding-top: 10px;
+}
+.metal .right a,.rubber .right a{
+	font-size: 42px;
+	font-family: 'Helvetica-CondensedBoldRg';
+	color: #6b6a6a;
+}
+.metal .right img,.rubber .right img{float: left;margin: 0px 0 0 50px}
+.metal .midbg,.rubber .midbg{
+	background: url(../Images/common/plastic_bg.png) repeat-x;
+	width: 100%;
+	height: 72px;
+	margin-top: 10px;
+}
+.rubber .left{background: url(../Images/common/rubber_leftc.png) no-repeat left top;}
+.rubber .right{background: url(../Images/common/rubber_rightc.png) no-repeat right top;}
+.rubber .midbg{background: url(../Images/common/rubber_bg.png) repeat-x;}*/
+
+.metal .right a,.rubber .right a{
+	font-size: 42px;
+	font-family: 'Helvetica-CondensedBoldRg';
+	color: #6b6a6a;
+	text-align: center;
+	padding-top: 10px;
+}
+.metal .right img,.rubber .right img{float: left;margin: 0px 0 0 15px}
+.midbg{clear: both;margin: 3px 10px;}
+
+.rubber .left,.rubber .right,
+.metal .left,.metal .right,
+.rubber a,.metal a{
+	background-image: url(../Images/common/card_button.png);
+	background-repeat: no-repeat;
+	height: 73px;
+}
+.rubber .left{background-position: 0 0;}
+.rubber .right{background-position: right -95px;}
+.metal .left{background-position: 0 -290px;}
+.metal .right{background-position: right -374px;}
+
+.rubber a,.metal a{
+	background-position: 0 -192px;
+	background-repeat: repeat-x;
+	margin: 0 24px;
+	display: block;
+	height: 63px;
+	text-decoration: none;
+}
+.metal a{background-position: 0 -464px;}
+.Mtop5per{margin-top: 5%}
+.headbot_colr{/*background:#fff;*/width: 100%;}

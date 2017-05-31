@@ -1,0 +1,109 @@
+/* TACTIFY THEME */
+
+/* GENERAL
+-------------------------------------------------- */
+* { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+body { background:#333; padding:0; margin:0; }
+h1, h2, h3 { font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; margin:0; }
+h1 { font-size:20px; margin:0; }
+h2 { margin-top:0; font-size:24px; line-height: 24px; }
+h4 { font-size:16px; line-height: 18px; font-weight: bold; margin:0; }
+p { font-size:14px; line-height: 16px; margin:20px 0;}
+.light { font-weight:200; }
+.regular { font-weight:400; }
+.semi-bold { font-weight:500; }
+.bold { font-weight:600; }
+.clearfix { clear:both; }
+table { border-collapse: collapse; border-spacing: 0; width:100%; }
+table td { padding:0; }
+.wrapper { width:100%; max-width:1024px; margin:0 auto; background:#fff; position:relative; box-shadow:0 2px 10px rgba(0,0,0,0.5); }
+.padding-md { padding:5%; }
+.padding-lg { padding:10%; }
+
+/* BUTTONS
+-------------------------------------------------- */
+.btn { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display:block; width:100%; border:#ccc solid 1px; border-bottom:#bbb solid 1px; padding:10px; text-align: center; font-size: 14px; text-transform: uppercase; border-radius:4px; margin-bottom:10px;
+	/* fallback */
+	background-color: #f5f5f5;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e8e8e8), to(#f9f9f9));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f9f9f9, #e8e8e8); }
+.btn:hover { background:#fff; cursor: pointer; color:#555; }
+
+/* HEADER
+-------------------------------------------------- */
+.header { width:100%; padding-bottom: 0; position:relative; }
+.logo { height:75px; width:160px; float:left; text-align: center; }
+td.logo { float:none; width:100px; vertical-align: middle }
+.logo img { max-height:75px; max-width:120px; height:auto; }
+td.logo img { max-height:70px; max-width:90px; }
+.profile-image { width:125px; height:125px; padding:5px; background:#fff; position:absolute; right:0; }
+.profile-image img { width:100%; height:auto; }
+.name-holder { float:left; clear:left; width:100%; height:59px; border-top:#000 solid 1px; }
+.card .name-holder span { font-size:14px; line-height: 14px; display: block; margin-bottom:5px; }
+.name-holder .padding { padding:12px 0 0 12px; }
+.page-title { text-align: center; }
+
+/* CONTENT
+-------------------------------------------------- */
+.content.event { background:#292929; }
+
+/* BUTTON GRID
+-------------------------------------------------- */
+.button-grid { width:auto; padding:20px; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center; }
+.button-grid .button-holder { width:70px; margin:10px; display: inline-block; }
+.button-grid .button-holder span { font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; color:#ccc; font-size:14px; line-height:14px; }
+.button-grid .button-holder .button { display:block; float:left; background:url(../img/phone/button-bg.png) center center no-repeat scroll; background-size: cover; margin-bottom:5px; }
+.button-grid .button-holder .button img { width:100%; height:auto; margin:0; float:left; }
+
+/* HERO IMAGE
+-------------------------------------------------- */
+.hero-container { float:left; width:100%; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.hero-container img { width:100%; float:left; }
+
+/* OFFERS
+-------------------------------------------------- */
+.offers-container { float:right; width:100%; }
+.offer { background:#ddd; padding:20px; margin-bottom:2px; }
+.offer p { margin:5px 0; }
+.offer .price { float:right; padding:0 0 10px 10px; color:#e33333; font-weight: bold; font-size:18px; }
+
+/* EVENTS
+-------------------------------------------------- */
+.event-info { float:left; width:100%; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.event-info p, .event-info h2 { color:#bbb; }
+.event-info p { line-height: 28px; }
+.event-info p:last-child { margin-bottom:0; }
+
+/* ACTIONS
+-------------------------------------------------- */
+.actions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float:right; width:100%; padding:10px 10px 0 10px; }
+.event-actions { float:right; background:#292929; width:100%; }
+.event-actions .btn { border-radius:0; background:none; border:none; border-bottom:#333 solid 1px; margin:0; padding:15px; color:#ccc; text-align: left; }
+.event-actions .btn:active, .event-actions .btn:hover { background:#444; color:#fff; }
+.event-actions .btn span { width:30px; display: inline-block; }
+
+/* FOOTER
+-------------------------------------------------- */
+.footer { width:auto; background:#fff; }
+.footer-logo { width:60px; background:#fff; padding:10px 10px 6px 10px; float:right; }
+.footer img { width:100%; height:auto; }
+
+
+@media only screen and (min-width: 769px) {
+.button-grid .button-holder { width:120px; }
+.hero-container { width:50%; }
+.offers-container { width:50%; }
+.event-info { width:50%; }
+.actions { width:50%; }
+.event-actions { width:50%; }
+}
+@media only screen and (min-width: 1025px) {
+body { padding:5% 0 ; }

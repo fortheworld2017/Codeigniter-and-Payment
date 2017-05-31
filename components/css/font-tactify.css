@@ -1,0 +1,127 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Ti-sms:before {
+	content: "\e602";
+}
+.icon-Ti-hyperlink:before {
+	content: "\e603";
+}
+.icon-Ti-customer-service:before {
+	content: "\e60c";
+}
+.icon-Ti-request-meeting:before {
+	content: "\e600";
+}
+.icon-Ti-add-hyperlink:before {
+	content: "\e601";
+}
+.icon-Ti-phonenumber:before {
+	content: "\e604";
+}
+.icon-Ti-vimeo:before {
+	content: "\e618";
+}
+.icon-Ti-twitter:before {
+	content: "\e619";
+}
+.icon-Ti-tumblr:before {
+	content: "\e61a";
+}
+.icon-Ti-soundcloud:before {
+	content: "\e61b";
+}
+.icon-Ti-skype:before {
+	content: "\e61c";
+}
+.icon-Ti-linkedin:before {
+	content: "\e61d";
+}
+.icon-Ti-event:before {
+	content: "\e614";
+}
+.icon-Ti-promotion:before {
+	content: "\e613";
+}
+.icon-Ti-order:before {
+	content: "\e612";
+}
+.icon-Ti-monitor:before {
+	content: "\e611";
+}
+.icon-Ti-create:before {
+	content: "\e610";
+}
+.icon-Ti-account:before {
+	content: "\e60f";
+}
+.icon-Ti-dashboard:before {
+	content: "\e60d";
+}
+.icon-Ti-Campaign:before {
+	content: "\e617";
+}
+.icon-Ti-sticker:before {
+	content: "\e616";
+}
+.icon-Ti-address:before {
+	content: "\e608";
+}
+.icon-Ti-calender:before {
+	content: "\e609";
+}
+.icon-Ti-spotify:before {
+	content: "\e60a";
+}
+.icon-Ti-google-play:before {
+	content: "\e60b";
+}
+.icon-Ti-business-card:before {
+	content: "\e615";
+}
+.icon-Ti-edit:before {
+	content: "\e60e";
+}
+.icon-Ti-logo:before {
+	content: "\e621";
+}
+.icon-Ti-email:before {
+	content: "\e605";
+}
+.icon-Ti-youtube:before {
+	content: "\e606";
+}
+.icon-Ti-app-store:before {
+	content: "\e607";
+}
+.icon-Ti-address-book:before {
+	content: "\e620";
+}
+.icon-Ti-facebook:before {
+	content: "\e61f";
+}
+.icon-Ti-google-plus:before {
+	content: "\e61e";
+}

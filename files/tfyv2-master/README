@@ -1,0 +1,4 @@
+tfyv2
+=====
+set_owner_perm.sh: bash script to fix file permissions/ownership in amazon 
+  . use it when copying files to folder.

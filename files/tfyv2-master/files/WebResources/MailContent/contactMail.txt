@@ -1,0 +1,6 @@
+Hi Admin, <br><br>
+ 
+{MESSAGE}<br><br>
+ 
+Regards,<br>
+{REGARDS_NAME} <br><br>

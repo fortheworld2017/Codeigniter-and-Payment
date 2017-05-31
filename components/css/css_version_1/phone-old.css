@@ -1,0 +1,109 @@
+/* TACTIFY THEME */
+
+/* GENERAL
+-------------------------------------------------- */
+* { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+body { background:#333; padding:0; margin:0; }
+.light { font-weight:200; }
+.regular { font-weight:400; }
+.semi-bold { font-weight:500; }
+.bold { font-weight:600; }
+.clearfix { clear:both; }
+
+.footer { width:96%; padding:2% 2% 1% 2%; background:#fff; text-align: right; }
+.footer img { width:20%; }
+
+/* CARD
+-------------------------------------------------- */
+.wrapper { width:100%; max-width:600px; margin:0 auto; background:#fff; }
+.header { width:100%; padding-bottom: 0; }
+.card .logo-holder { width:100%; height:0; padding:0 0 34% 0; text-align:center; border-bottom:#000 solid 1px; }
+.card .logo-holder .logo-position { padding:0 5%; width:40%; float: left; }
+.card .logo-holder .logo-position img { width:100%; }
+.card .logo-holder .image-holder { float:right; width:46%; padding:2%; background:#fff; border-bottom:#fff solid 1px; }
+.card .logo-holder .image-holder img { float:right; }
+.card .name-holder { width:50%; height:0; padding:0 50% 16% 0; }
+.card .name-holder .position { padding:8% 0 0 5%; }
+.card .name-holder span { font-size:14px; line-height: 14px; display: block; margin-bottom:2%; }
+.card .image-holder { position:relative; }
+.card .image-holder img { width:100%; height:auto; }
+.buttons-container { width:80%; padding:5% 10%; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.buttons-container .button-holder { width:27.3%; margin:3%; float:left; text-align: center; }
+.buttons-container .button-holder span { font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; color:#ccc; font-size:14px; line-height:14px; }
+.buttons-container .button-holder .button { display:block; float:left; background:url(../img/phone/button-bg.png) center center no-repeat scroll; background-size: cover; margin-bottom:5px; }
+.buttons-container .button-holder .button img { width:100%; height:auto; margin:0; float:left; }
+
+
+@media only screen and (min-width: 500px) {
+.card .name-holder span { font-size:16px; line-height: 16px; }
+}
+@media only screen and (max-width: 450px) {
+.card .name-holder span { font-size:14px; line-height: 14px; }
+}
+@media only screen and (max-width: 400px) {
+.card .name-holder span { font-size:12px; line-height: 12px; }
+}
+
+/* PROMOTION
+-------------------------------------------------- */
+.promo h1 { font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; margin:0; font-size:24px; line-height: 18px; }
+.promo h3 { margin:0; font-size:18px; line-height: 22px; }
+.promo p { margin:0; font-size:16px; line-height: 22px; }
+.promo button { display:block; width:100%; border:#ccc solid 1px; border-bottom:#bbb solid 1px; padding:10px; text-align: center; font-size: 14px; text-transform: uppercase; font-weight:bold; border-radius:4px; margin-bottom:10px;
+	/* fallback */
+	background-color: #f5f5f5;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e8e8e8), to(#f9f9f9));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #f9f9f9, #e8e8e8);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f9f9f9, #e8e8e8); }
+.promo button:hover { background:#fff; cursor: pointer; color:#555; }
+
+.promo .header { }
+.promo .header table { width:100%; border-collapse: collapse; border-spacing: 0; }
+.promo .header table td { padding:0; vertical-align: middle; text-align: center; }
+.promo .logo-holder { width:100px; }
+.promo .logo-holder img { width:80%; }
+.promo .title { }
+
+.hero-container { width:90%; padding:5%; background-color:#222; background-image:url(../img/phone/buttons-bg.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.hero-container img { width:100%; height:auto; }
+
+.offer { background:#ddd; padding:5%; margin-bottom:2px; }
+.offer .price { float:right; padding:0 0 10px 10px; color:#e33333; font-weight: bold; font-size:24px; }
+
+.actions { padding:3%; }
+
+@media only screen and (max-width: 450px) {
+.promo h1 { font-size:20px; line-height: 20px; }
+.promo h3 { margin:0; font-size:16px; line-height: 20px; }
+.promo p { margin:0; font-size:14px; line-height: 20px; }
+.offer .price { font-size:18px; }
+}
+@media only screen and (max-width: 400px) {
+.promo h1 { font-size:18px; line-height: 18px; }
+.promo h3 { margin:0; font-size:14px; line-height: 18px; }
+.promo p { margin:0; font-size:13px; line-height: 18px; }
+.offer .price { font-size:18px; }
+}
+
+
+/* EVENT
+-------------------------------------------------- */
+.promo.event .hero-container { width:100%; padding:0; }
+.promo.event .hero-container img { float:left; }
+.event .info-container { background:#ddd; padding:5%; }
+.event .info-container h2 { font-size:24px; margin:0 0 20px 0; font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; }
+.event .info-container p { font-size:16px; line-height: 28px; margin:20px 0; }
+.event .info-container p:last-child { margin:20px 0 0 0; }
+
+@media only screen and (max-width: 450px) {
+.event .info-container h2 { font-size:20px; margin:0 0 15px 0; font-family: 'Open Sans Condensed', Helvetica, sans-serif; text-transform: uppercase; }
+.event .info-container p { font-size:14px; line-height: 20px; margin:15px 0; }
+.event .info-container p:last-child { margin:15px 0 0 0; }
+}
